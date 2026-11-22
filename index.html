@@ -3,49 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#20282b">
-  <meta name="description" content="ajiluerfu 的个人网站。">
-  <title>ajiluerfu's home page</title>
+  <meta name="theme-color" content="#f7f8f7">
+  <meta name="description" content="ajiluerfu 的个人主页。">
+  <title>ajiluerfu — 个人主页</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">跳转到正文</a>
-  <div class="screen-glow" aria-hidden="true"></div>
-  <div class="site">
-    <header class="masthead">
-      <p class="masthead-top">PERSONAL WEB PAGE <span>EST. 2026</span></p>
-      <h1>ajiluerfu<span class="cursor" aria-hidden="true">_</span></h1>
-      <p class="tagline">一处留在网络上的个人空间。</p>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <div class="container">
+    <header class="site-header">
+      <a class="site-name" href="/">ajiluerfu</a>
+      <nav aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#links">链接</a>
+      </nav>
     </header>
 
-    <div class="site-body">
-      <nav class="sidebar" aria-label="站点导航">
-        <div class="sidebar-heading">INDEX / 索引</div>
-        <a class="active" href="#main"><span>01</span> 首页</a>
-        <a href="#about"><span>02</span> 关于本站</a>
-        <a href="#links"><span>03</span> 站外链接</a>
-        <div class="sidebar-note"><span class="square" aria-hidden="true"></span> 页面已连接<br><small>你正在浏览个人网站</small></div>
-      </nav>
+    <main id="main">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">PERSONAL WEBSITE <span>01 / 02</span></p>
+        <h1 id="intro-title">你好，我是 ajiluerfu。</h1>
+        <p class="lead">欢迎来到我的个人主页。</p>
+      </section>
 
-      <main id="main" class="content">
-        <div class="breadcrumb">HOME / 首页 <span>2026.11.22</span></div>
-        <article class="entry" id="about">
-          <div class="entry-meta"><span>001</span><span>关于本站</span></div>
-          <h2>你好，欢迎来到这里。</h2>
-          <p>我是 ajiluerfu。这是我的个人网站。</p>
-          <p>现在，它只有一些简单的文字和一个通往外面的链接。以后想留下什么，可以慢慢写在这里。</p>
-          <p>感谢你的到访。</p>
-          <div class="entry-end">＊　＊　＊</div>
-        </article>
+      <section class="row" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">关于本站</h2>
+        <div class="row-content">
+          <p>这是一个简单的个人空间。目前先从这一页开始，今后可以在这里加入更多内容。</p>
+        </div>
+      </section>
 
-        <section class="links" id="links" aria-labelledby="links-title">
-          <div class="section-heading"><h2 id="links-title">LINKS</h2><span>站外链接</span></div>
-          <ul><li><span class="link-marker" aria-hidden="true">↗</span><a href="https://github.com/ajiluerfu" target="_blank" rel="noopener noreferrer">GitHub / ajiluerfu</a><span class="link-note">公开主页</span></li></ul>
-        </section>
-      </main>
-    </div>
+      <section class="row" id="links" aria-labelledby="links-title">
+        <h2 id="links-title">站外链接</h2>
+        <div class="row-content">
+          <a class="external-link" href="https://github.com/ajiluerfu" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span class="link-address">github.com/ajiluerfu</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
 
-    <footer><span>© 2026 ajiluerfu</span><span>LAST UPDATED / 2026.11.22</span><a href="#main">TOP ↑</a></footer>
+    <footer class="site-footer"><span>© 2026 ajiluerfu</span><span>个人主页</span></footer>
   </div>
 </body>
 </html>
