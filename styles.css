@@ -2,49 +2,58 @@
   color-scheme: light;
   font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
   font-size: 16px;
-  color: #242a2c;
-  background: #f7f8f7;
+  color: #2b2c29;
+  background: #f8f7f3;
   scroll-behavior: smooth;
 }
 
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; }
 a { color: inherit; }
-a:focus-visible { outline: 2px solid #3b6570; outline-offset: 4px; }
-.skip-link { position: absolute; left: 16px; top: -80px; padding: 10px; background: white; z-index: 2; }
+a:focus-visible { outline: 2px solid #777e61; outline-offset: 4px; }
+.skip-link { position: absolute; top: -80px; left: 16px; z-index: 2; padding: 10px; background: white; }
 .skip-link:focus { top: 16px; }
-.container { width: min(100% - 64px, 1040px); margin: 0 auto; }
+.site-wrap { width: min(100% - 72px, 1100px); margin: 0 auto; }
 
-.site-header { display: flex; align-items: center; justify-content: space-between; height: 92px; border-bottom: 1px solid #d9dedc; }
-.site-name { font-size: 1.08rem; font-weight: 650; letter-spacing: -.025em; text-decoration: none; }
-.site-header nav { display: flex; gap: 36px; }
-.site-header nav a { color: #697275; font-size: .9rem; text-decoration: none; }
-.site-header nav a:hover { color: #242a2c; }
+.topbar { display: flex; align-items: center; justify-content: space-between; min-height: 78px; gap: 28px; }
+.brand { font-family: Georgia, "Times New Roman", serif; font-size: 1.52rem; font-weight: 700; letter-spacing: -.035em; text-decoration: none; }
+.topbar nav { display: flex; align-items: center; gap: 7px; }
+.topbar nav a { padding: 9px 14px; border-radius: 7px; color: #6f706b; font-size: .88rem; text-decoration: none; }
+.topbar nav a:hover, .topbar nav a.current { background: #efeee8; color: #2b2c29; }
 
-.intro { padding: 112px 0 132px; }
-.eyebrow { display: flex; justify-content: space-between; max-width: 280px; margin: 0 0 34px; color: #7b8588; font-size: .78rem; font-weight: 600; letter-spacing: .12em; }
-h1 { margin: 0; font-size: clamp(2.8rem, 5.7vw, 5.2rem); font-weight: 580; letter-spacing: -.068em; line-height: 1.2; }
-.lead { margin: 26px 0 0; color: #687277; font-size: 1.1rem; line-height: 1.8; }
+.layout { display: grid; grid-template-columns: minmax(230px, 300px) minmax(0, 1fr); gap: clamp(55px, 8vw, 110px); padding: 70px 0 100px; }
+.profile { padding-top: 5px; }
+.profile-label { display: inline-block; margin: 0 0 19px; padding: 6px 10px; border: 1px solid #ddded4; border-radius: 5px; color: #70745d; background: #f3f2ec; font-size: .71rem; font-weight: 700; letter-spacing: .085em; }
+.profile h1 { margin: 0 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.55rem, 4vw, 3.2rem); line-height: 1.1; letter-spacing: -.055em; }
+.profile-subtitle { margin: 0; color: #72775c; font-size: 1.05rem; font-weight: 600; }
+.profile-description { max-width: 15em; margin: 23px 0 25px; color: #767771; line-height: 1.85; font-size: .94rem; }
+.profile-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 33px; min-width: 114px; padding: 9px 12px; border: 1px solid #d8d9d2; border-radius: 7px; background: #fffefa; font-size: .85rem; text-decoration: none; box-shadow: 0 1px 2px rgba(43,44,41,.04); }
+.profile-link:hover { border-color: #aeb29e; background: #f5f5ef; }
+.profile-meta { display: flex; justify-content: space-between; gap: 12px; margin-top: 52px; padding-top: 16px; border-top: 1px solid #ddded8; color: #989991; font-size: .72rem; font-weight: 600; letter-spacing: .09em; }
 
-.row { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 30px; padding: 39px 0 54px; border-top: 1px solid #d9dedc; }
-.row h2 { margin: 0; color: #4c575b; font-size: .91rem; font-weight: 600; }
-.row-content { max-width: 640px; }
-.row-content p { max-width: 34em; margin: -5px 0 0; color: #505b5f; font-size: 1.04rem; line-height: 1.95; }
-.external-link { display: grid; grid-template-columns: 110px 1fr auto; align-items: center; gap: 12px; padding: 0 0 18px; border-bottom: 1px solid #d9dedc; text-decoration: none; font-size: 1rem; }
-.external-link:hover { color: #2f6674; border-color: #879da2; }
-.link-address { color: #778185; font-size: .91rem; }
-.site-footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 120px; padding: 25px 0 38px; border-top: 1px solid #d9dedc; color: #929b9e; font-size: .81rem; }
+.main-column { min-width: 0; }
+.content-section { margin-bottom: 54px; }
+.content-section h2 { margin: 0 0 20px; font-family: Georgia, "Microsoft YaHei", serif; font-size: 1.52rem; line-height: 1.4; letter-spacing: -.015em; }
+.content-section p { margin: 0 0 16px; color: #666963; font-size: .99rem; line-height: 1.9; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.section-heading span { color: #a6a79f; font-size: .77rem; }
+.quote-card { padding: 30px 34px 27px; border: 1px solid #dedfd8; border-radius: 8px; background: #fbfaf7; box-shadow: 0 2px 7px rgba(50,51,45,.035); }
+blockquote { margin: 0 0 19px; color: #373a33; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.25rem, 2.2vw, 1.48rem); line-height: 1.75; }
+.quote-card .translation { margin: 0 0 21px; color: #6b6e65; font-size: .94rem; }
+.source { color: #81867a; font-size: .82rem; text-underline-offset: 3px; }
+.source:hover { color: #444d41; }
+footer { display: flex; justify-content: space-between; gap: 16px; padding: 21px 0 34px; border-top: 1px solid #e1e1da; color: #a4a59e; font-size: .78rem; }
 
-@media (max-width: 700px) {
-  .container { width: min(100% - 36px, 540px); }
-  .site-header { height: 74px; }
-  .site-header nav { gap: 20px; }
-  .intro { padding: 90px 0 105px; }
-  h1 { font-size: clamp(2.7rem, 9vw, 4rem); }
-  .row { grid-template-columns: 1fr; gap: 20px; padding: 30px 0 40px; }
-  .row-content p { margin: 0; }
-  .external-link { grid-template-columns: 80px 1fr auto; }
-  .site-footer { margin-top: 80px; }
+@media (max-width: 760px) {
+  .site-wrap { width: min(100% - 36px, 560px); }
+  .topbar { min-height: 70px; }
+  .topbar nav { gap: 0; }
+  .topbar nav a { padding: 8px 10px; }
+  .layout { grid-template-columns: 1fr; gap: 53px; padding: 45px 0 65px; }
+  .profile-description { max-width: none; }
+  .profile-meta { max-width: 300px; margin-top: 34px; }
+  .content-section { margin-bottom: 46px; }
+  .quote-card { padding: 24px; }
 }
-@media (max-width: 420px) { .link-address { font-size: .78rem; } }
+@media (max-width: 400px) { .brand { font-size: 1.3rem; } .topbar nav a { font-size: .8rem; padding: 7px; } }
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }

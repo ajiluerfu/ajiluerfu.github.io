@@ -3,45 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8f7">
+  <meta name="theme-color" content="#f8f7f3">
   <meta name="description" content="ajiluerfu 的个人主页。">
   <title>ajiluerfu — 个人主页</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到正文</a>
-  <div class="container">
-    <header class="site-header">
-      <a class="site-name" href="/">ajiluerfu</a>
+  <div class="site-wrap">
+    <header class="topbar">
+      <a class="brand" href="/">ajiluerfu</a>
       <nav aria-label="主导航">
+        <a class="current" href="#main">首页</a>
         <a href="#about">关于</a>
-        <a href="#links">链接</a>
+        <a href="#quote">引文</a>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="intro" aria-labelledby="intro-title">
-        <p class="eyebrow">PERSONAL WEBSITE <span>01 / 02</span></p>
-        <h1 id="intro-title">你好，我是 ajiluerfu。</h1>
-        <p class="lead">欢迎来到我的个人主页。</p>
-      </section>
+    <main id="main" class="layout">
+      <aside class="profile" aria-labelledby="profile-title">
+        <p class="profile-label">PERSONAL WEBSITE</p>
+        <h1 id="profile-title">ajiluerfu</h1>
+        <p class="profile-subtitle">个人主页</p>
+        <p class="profile-description">一个简单、安静的个人空间。</p>
+        <a class="profile-link" href="https://github.com/ajiluerfu" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="profile-meta"><span>ONLINE</span><span>EST. 2026</span></div>
+      </aside>
 
-      <section class="row" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">关于本站</h2>
-        <div class="row-content">
-          <p>这是一个简单的个人空间。目前先从这一页开始，今后可以在这里加入更多内容。</p>
-        </div>
-      </section>
+      <div class="main-column">
+        <section id="about" class="content-section" aria-labelledby="about-title">
+          <h2 id="about-title">关于我</h2>
+          <p>你好，我是 ajiluerfu。欢迎来到我的个人主页。</p>
+          <p>这里暂时只保留一些基本信息和我想留下的文字。其他内容会在合适的时候慢慢补充。</p>
+        </section>
 
-      <section class="row" id="links" aria-labelledby="links-title">
-        <h2 id="links-title">站外链接</h2>
-        <div class="row-content">
-          <a class="external-link" href="https://github.com/ajiluerfu" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span class="link-address">github.com/ajiluerfu</span><span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
+        <section id="quote" class="content-section quote-section" aria-labelledby="quote-title">
+          <div class="section-heading"><h2 id="quote-title">引文</h2><span>01 / 01</span></div>
+          <div class="quote-card">
+            <blockquote lang="grc">Ἀπολῶ τὴν σοφίαν τῶν σοφῶν, καὶ τὴν σύνεσιν τῶν συνετῶν ἀθετήσω.</blockquote>
+            <p class="translation">我要灭绝智慧人的智慧，废弃聪明人的聪明。</p>
+            <a class="source" href="https://www.sbl-site.org/wp-content/uploads/2024/12/67-SBLGNT-1Corinthians.pdf" target="_blank" rel="noopener noreferrer">《哥林多前书》1:19</a>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer"><span>© 2026 ajiluerfu</span><span>个人主页</span></footer>
+    <footer><span>© 2026 ajiluerfu</span><span>个人主页</span></footer>
   </div>
 </body>
 </html>
